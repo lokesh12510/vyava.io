@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick=myfunc()>ON</button>
+    <p> ON </p>
+    <img class="btnOff" src="/images/1.jpg" alt="">
+    <img class="btnOn" src="/images/2.jpg" alt="">
+
+    <script>
+        const btn = document.querySelector('button');
+        const p = document.querySelector('p');
+        const img1 = document.getElementsByClassName('btnOff');
+        const img2 = document.getElementsByClassName('btnOn');
+
+
+
+        function myfunc() {
+
+            if (p.textContent === 'ON') {
+                img1.display = "block";
+            } else {
+                img2.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
