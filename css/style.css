@@ -198,6 +198,7 @@ nav ul li {
 
 nav a {
     color: #525252;
+    font-family: 'Assistant', sans-serif;
     text-transform: capitalize;
     font-weight: 400;
     font-size: 17px;
@@ -312,9 +313,9 @@ a.reqe-button {
 
 @media all and (max-width: 736px) {
     #logo {
-        display: block;
+        display: flex;
         padding: 0;
-        width: 100%;
+        width: 75%;
         text-align: center;
         float: none;
     }
@@ -619,7 +620,7 @@ a.reqe-button {
     text-transform: uppercase;
     letter-spacing: 1px;
     border: 2px solid #fff;
-    background: #ff2600;
+    background: #84bb40;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -628,7 +629,7 @@ a.reqe-button {
 }
 
 .button-style-2 {
-    background: #fd5c63;
+    background: #84bb40;
     color: #fff;
 }
 
@@ -660,7 +661,7 @@ a.reqe-button {
 /* about */
 
 .about {
-    background: url(https://images.unsplash.com/photo-1606914469725-e398d2f1d7ee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80) no-repeat center;
+    background: url('../images/bg.jpg') no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -722,9 +723,9 @@ a.reqe-button {
 }
 
 .box20:before {
-    width: 90%;
+    width: 92%;
     height: 220%;
-    background: #ff2600;
+    background: #84bb40;  
     top: -68%;
     left: -100%;
     z-index: 1;
@@ -832,7 +833,7 @@ p.sub-test-w3ls {
 
 h3.title-w3 {
     font-size: 40px;
-    color: #fd5c63;
+    color: #84bb40;
     letter-spacing: 1px;
 }
 
@@ -888,7 +889,7 @@ h3.title-w3 span {
 /* footer */
 
 footer {
-    background: #fd5c63;
+    background: #84bb40;
 }
 
 
@@ -1914,3 +1915,7 @@ h6.subheading-w3ls {
 
 
 /* //responsive */
+
+.flex-me {
+    display: flex;
+}
