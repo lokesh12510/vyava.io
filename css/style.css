@@ -5,6 +5,27 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+@media screen and (max-width: 500px){
+    .hide-mob{
+        display: hidden;
+    }
+    body{
+        display:hidden;
+    }
+}
+
+/* Element | file:///D:/PROJECTS/NACFOLG%20PROJECTS/vyavaa%202/vyava.io/index.html */
+
+.navbar {
+  background-color: #fff;
+}
+
+
+/* Element | file:///D:/PROJECTS/NACFOLG%20PROJECTS/vyavaa%202/vyava.io/index.html */
+
+button.form-control {
+  line-height: 8px;
+}
 
 /* Reset Code */
 
@@ -127,7 +148,7 @@ a.move-top {
 /* header */
 
 header {
-    box-shadow: 2px 4px 13px 1px rgba(8, 8, 8, 0.04);
+    /*box-shadow: 2px 4px 13px 1px rgba(8, 8, 8, 0.04);*/
     background: #fff;
 }
 
@@ -277,7 +298,7 @@ nav ul ul li a {
 }
 
 
-/* Second, Third and more Tiers	
+/* Second, Third and more Tiers
  * We move the 2nd and 3rd etc tier dropdowns to the left
  * by the amount of the width of the first tier.
 */
@@ -404,7 +425,7 @@ a.reqe-button {
         color: #FFF;
         font-size: 17px;
     }
-    /* 
+    /*
     nav ul li ul li .toggle,
     nav ul ul a {
         background-color: #212121;
@@ -725,7 +746,7 @@ a.reqe-button {
 .box20:before {
     width: 92%;
     height: 220%;
-    background: #84bb40;  
+    background: #84bb40;
     top: -68%;
     left: -100%;
     z-index: 1;
@@ -792,7 +813,7 @@ a.reqe-button {
 /* middle */
 
 .what-w3ls {
-    background: url(https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center;
+    background: url(https://images.unsplash.com/photo-1509359149003-657ef23eaf04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -1035,7 +1056,7 @@ ul.footer-nav-wthree li a:hover {
 /* inner pages */
 
 .main-banner-2 {
-    background: url(../images/banner3.jpg) no-repeat 0px -54px;
+    background: url(../images/gallery_banner.jpg) no-repeat 0px -54px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1617,7 +1638,7 @@ h6.subheading-w3ls {
         font-size: 32px;
     }
     .what-w3ls {
-        margin: 0 0 3em;
+        margin: 0 0 0em;
     }
     .style-banner h3 {
         font-size: 37px;
