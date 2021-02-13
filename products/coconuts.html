@@ -2,26 +2,35 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Vyava</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vyava-Coimbatore</title>
 		<meta name="description" content="Thumbnail Grid with Expanding Preview" />
 		<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
 		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/navbar.css" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<script src="js/modernizr.custom.js"></script>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	    <!-- //Web-Fonts -->
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>				
+	    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">	
 		<style type="text/css">
 			ul > li.list-order {
 				margin-bottom: 3rem!important;
-				
+
 			}
 			h2 {
-				margin-top: 1rem!important; 
-				z-index: 999; 
+				margin-top: 1rem!important;
+				z-index: 999;
 				position: relative;
 			}
 			.og-expanded {
@@ -29,13 +38,40 @@
 				height: 960px;
 				margin-bottom: 60px;
 			}
+			.banner{
+			    width: 100%;
+			    height:400px;
+			}
+			.banner img{
+			    width: 100%;
+			    height:100%;
+			}
+			@media screen and (max-width: 500px){
+			    .banner{
+			        height: 300px;
+			    }
+			}
+			.main-banner-2 {
+				background: url('../images/banners/main_banner.jpg')!important;
+			}
 
+			a.label-tag {
+				color: black;
+			}
+
+			a.label-tag:hover {
+				color: black;
+				text-decoration: underline;
+			}
+			a.enquire-tag:hover {
+				color: white!important
+			}
 		</style>
 	</head>
 	<body>
 	<!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
-                <div class="container"> <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="container"> <a class="navbar-brand d-flex align-items-center" href="..index.html">
                     <img src="../images/vyava_logo.png" style="height: auto; width:80px;">
                 </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
                     <span class="navbar-toggler-icon"></span>
@@ -44,19 +80,38 @@
 
                 <div class="collapse navbar-collapse" id="navbar4">
                     <ul class="container navbar-nav ml-auto pl-lg-4">
-                        <li class="nav-item px-lg-2 active"> <a class="nav-link" href="../index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>About</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Spices</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Coconuts</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span>Gallery</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span>Contact</a> </li>
+                        <li class="nav-item px-lg-2 "> <a class="nav-link" href="../index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
+                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-address-card"></i></span>About</a> </li>
+                        <li class="nav-item px-lg-2"> <a class="nav-link" href="spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-mortar-pestle"></i></span>spices</a> </li>
+                        <li class="nav-item px-lg-2 active"> <a class="nav-link" href="coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-leaf"></i></span>Coconuts</a> </li>
+                        
+                        
+                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-images"></i></span>Gallery</a> </li>
+                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-address-book"></i></span>Contact</a> </li>
                     </ul>
-                    
+
+
             </div>
         </div>
     </nav>
+		<!-- Navbar Ends -->
+	    <div class="banner">
+					<img src="../images/banners/new_banner.jpg">
+					<div class="breadcrumb-w3ls py-1">
+			        <div class="container p-3">
+			            <ol class="breadcrumb m-0">
+			                <li class="breadcrumb-item">
+			                    <a href="index.html">Home</a>
+			                </li>
+			                <li class="breadcrumb-item active" aria-current="page">Spices</li>
+			            </ol>
+			        </div>
+			    </div>
+		</div>
+		<br>
     <!-- Navbar Ends -->
-		<div class="container mt-4">	
+
+		<div class="container mt-4">
 			<!-- Codrops top bar -->
 			<!-- <div class="codrops-top clearfix">
 				<a href="http://tympanus.net/Tutorials/HexaFlip/"><strong>&laquo; Previous Demo: </strong>HexaFlip</a>
@@ -67,225 +122,67 @@
 			</div> -->
 			<!--/ Codrops top bar -->
 			<br>
-			<header class="clearfix">
-					<h1>Our Products<span>Coconuts</span></h1>	
+			    <!-- page details -->
+
+		    <!-- //page details -->
+			<header class="clearfix" style="padding-bottom: 0px;">
+					<h1>Our Products<span>Coconuts</span></h1>
 			</header>
 			<div class="main">
 				<ul id="og-grid" class="og-grid">
 					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Red Chilli To Vyava" data-largesrc="images/coconuts/semi-husked-2.jpeg" data-title="Semi Husked" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/coconuts/semi-husked.jpg" alt="img01"/>
+							<h5>Semi husked</h5>
 						</a>
-						<h2>Cardamom</h2>
 					</li>
 					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Black Pepper To Vyava" data-largesrc="images/coconuts/fully-husked-1.jpg" data-title="Fully husked" data-description="We hand picked BLACK PEPPER grown in parts of India. Our experts travel across India to find the highest grade of Black Pepper to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. ">
+							<img src="images/coconuts/fully-husked-2.jpg" alt="img02"/>
+							<h5>Fully husked</h5>
 						</a>
-						<h2>Black Pepper</h2>
 					</li>
 					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Turmeric To Vyava" data-largesrc="images/coconuts/coconut-oil-1.jpg" data-title="Coconut oil" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+							<img src="images/coconuts/coconut-oil-2.jpg" alt="img03"/>
+							<h5>Coconut oil</h5>
 						</a>
-						<h2>Turmeric</h2>
 					</li>
 					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Chilli To Vyava" data-largesrc="images/coconuts/virgin-coconut-oil-1.jpg" data-title="Virgin coconut oil" data-description=". Our experts travel across India to find the highest grade of Chilli to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. ">
+							<img src="images/coconuts/virgin-coconut-oil-2.jpg" alt="img01"/>
+							<h5>Virgin coconut oil</h5>
 						</a>
-						<h2>Chilli</h2>
 					</li>
 					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cloves To Vyava" data-largesrc="images/coconuts/desiccated-coconut-powder-1.jpg" data-title="Dessicated coconut powder" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+							<img src="images/coconuts/desiccated-coconut-powder-2.jpg" alt="img02"/>
+							<h5>Dessicated coconut powder</h5>
 						</a>
-						<h2>Cloves</h2>
 					</li>
 					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-						<h2>Cinnamon</h2>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-						<h2>Cumin</h2>
-					</li>
-					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-						<h2>Fennel</h2>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-						<h2>Coriander</h2>
-					</li>
-					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-						<h2>Garlic</h2>
-					</li>
-					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-						<h2>Curry Leaves</h2>
-					</li>
-					<li class="list-order">
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-						<h2>Ginger</h2>
-					</li>
-					<!-- <li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cinnamon To Vyava" data-largesrc="images/coconuts/coconut-sugar-1.jpeg" data-title="Coconut sugar" data-description=" Vyava, Processes and Packages hand picked CINNAMON grown in parts of India and Sri Lanka. Our experts travel across India and Sri Lanka to find the highest grade of Cinnamon to be Crushed, Grounded, and Blended.">
+							<img src="images/coconuts/coconut-sugar-2.jpg" alt="img03"/>
+							<h5>Coconut sugar</h5>
 						</a>
 					</li>
 					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cumin To Vyava" data-largesrc="images/coconuts/coconut-shell-powder-1.jpg" data-title="Coconut shell/Shell powder" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/coconuts/coconut-shell-powder-2.jpg" alt="img01"/>
+							<h5>Coconut shell/Shell powder</h5>
 						</a>
 					</li>
 					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cumin To Vyava" data-largesrc="images/coconuts/activated-carbon-1.jpg" data-title="Activated Carbon" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/coconuts/activated-carbon-2.jpg" alt="img01"/>
+							<h5>Activated Carbon</h5>
 						</a>
 					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li> -->
+					
+					
+
 				</ul>
-				
+
 			</div>
 		</div><!-- /container -->
 		        <footer>
@@ -316,16 +213,16 @@
                     <div class="col-lg-5 col-md-7 w3l-footer mt-lg-3 text-md-left text-center">
                         <ul class="list-unstyled footer-nav-wthree">
                             <li class="mr-4">
-                                <a href="index.html" class="active">Home</a>
+                                <a href="../index.html">Home</a>
                             </li>
                             <li class="mr-4">
-                                <a class="" href="about.html">About Us</a>
+                                <a class="" href="../about.html">About Us</a>
                             </li>
                             <li class="mr-4">
-                                <a class="" href="gallery.html">Gallery</a>
+                                <a class="" href="../gallery.html">Gallery</a>
                             </li>
                             <li>
-                                <a class="" href="contact.html">Contact Us</a>
+                                <a class="" href="../contact.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -367,7 +264,9 @@
         </footer>
         <!-- //footer -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/grid.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script src="js/grid.js"></script>
+		<script src="../js/navbar.js"></script>
 		<script>
 			$(function() {
 				Grid.init();

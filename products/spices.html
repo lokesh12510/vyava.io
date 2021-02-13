@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Thumbnail Grid with Expanding Preview</title>
+		<title>Vyava-Coimbatore</title>
 		<meta name="description" content="Thumbnail Grid with Expanding Preview" />
 		<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
 		<meta name="author" content="Codrops" />
@@ -15,6 +15,14 @@
 		<link rel="stylesheet" type="text/css" href="../css/navbar.css" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<script src="js/modernizr.custom.js"></script>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	    <!-- //Web-Fonts -->
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>				
+	    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">	
 		<style type="text/css">
 			ul > li.list-order {
 				margin-bottom: 3rem!important;
@@ -63,7 +71,7 @@
 	<body>
 	<!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
-                <div class="container"> <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="container"> <a class="navbar-brand d-flex align-items-center" href="../index.html">
                     <img src="../images/vyava_logo.png" style="height: auto; width:80px;">
                 </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
                     <span class="navbar-toggler-icon"></span>
@@ -72,12 +80,14 @@
 
                 <div class="collapse navbar-collapse" id="navbar4">
                     <ul class="container navbar-nav ml-auto pl-lg-4">
-                        <li class="nav-item px-lg-2 active"> <a class="nav-link" href="../index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>About</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Spices</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Coconuts</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span>Gallery</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span>Contact</a> </li>
+                        <li class="nav-item px-lg-2 "> <a class="nav-link" href="../index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
+                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-address-card"></i></span>About</a> </li>
+                        <li class="nav-item px-lg-2 active"> <a class="nav-link" href="spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-mortar-pestle"></i></span>spices</a> </li>
+                        <li class="nav-item px-lg-2"> <a class="nav-link" href="coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-leaf"></i></span>Coconuts</a> </li>
+                        
+                        
+                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-images"></i></span>Gallery</a> </li>
+                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-address-book"></i></span>Contact</a> </li>
                     </ul>
 
             </div>
@@ -126,7 +136,7 @@
 						</a>
 					</li>
 					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Black Pepper To Vyava" data-largesrc="images/spices/Original/black_pepper.jpg" data-title="Black Pepper" data-description="We hand picked BLACK PEPPER grown in parts of India. Our experts travel across India to find the highest grade of Black Pepper to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. Our Black Pepper has a black to dark brown colour with an essence of freshness and bold flavours. We offer a wide variety of packaging options along with labelling to our clients.">
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Black Pepper To Vyava" data-largesrc="images/spices/Original/black_pepper.jpg" data-title="Black Pepper" data-description="We hand picked BLACK PEPPER grown in parts of India. Our experts travel across India to find the highest grade of Black Pepper to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. ">
 							<img src="images/spices/Thumbs/black_pepper.jpg" alt="img02"/>
 							<h5>Black Pepper</h5>
 						</a>
@@ -138,7 +148,7 @@
 						</a>
 					</li>
 					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Chilli To Vyava" data-largesrc="images/spices/Original/chilli.jpg" data-title="Chilli" data-description=". Our experts travel across India to find the highest grade of Chilli to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. Our Chilli has a bright red colour with an essence of freshness and bold flavours. We offer a wide variety of packaging options along with labelling to our clients. We deal in 3 varieties of Chilli – Pure Kashmiri Premium Chilli, Red Chilli (Medium), Extra Hot Chilli.">
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Chilli To Vyava" data-largesrc="images/spices/Original/chilli.jpg" data-title="Chilli" data-description=". Our experts travel across India to find the highest grade of Chilli to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. ">
 							<img src="images/spices/Thumbs/chilli.jpg" alt="img01"/>
 							<h5>Chilli</h5>
 						</a>
@@ -150,7 +160,7 @@
 						</a>
 					</li>
 					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cinnamon To Vyava" data-largesrc="images/spices/Original/cinnamon.jpg" data-title="Cinnamon" data-description=" Vyava, Processes and Packages hand picked CINNAMON grown in parts of India and Sri Lanka. Our experts travel across India and Sri Lanka to find the highest grade of Cinnamon to be Crushed, Grounded, and Blended. We believe in providing superior quality which are processed and packaged under maximum hygienic conditions. Our Cinnamon has a orangish mid brown colour with an essence of freshness and a pleasant flavour. We offer a wide variety of packaging options along with labelling to our clients.">
+						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cinnamon To Vyava" data-largesrc="images/spices/Original/cinnamon.jpg" data-title="Cinnamon" data-description=" Vyava, Processes and Packages hand picked CINNAMON grown in parts of India and Sri Lanka. Our experts travel across India and Sri Lanka to find the highest grade of Cinnamon to be Crushed, Grounded, and Blended. We believe in providing superior quality which are processed and packaged under maximum hygienic conditions. ">
 							<img src="images/spices/Thumbs/cinnamon.jpg" alt="img03"/>
 							<h5>Cinnamon</h5>
 						</a>
@@ -224,16 +234,16 @@
                     <div class="col-lg-5 col-md-7 w3l-footer mt-lg-3 text-md-left text-center">
                         <ul class="list-unstyled footer-nav-wthree">
                             <li class="mr-4">
-                                <a href="index.html" class="active">Home</a>
+                                <a href="../index.html">Home</a>
                             </li>
                             <li class="mr-4">
-                                <a class="" href="about.html">About Us</a>
+                                <a class="" href="../about.html">About Us</a>
                             </li>
                             <li class="mr-4">
-                                <a class="" href="gallery.html">Gallery</a>
+                                <a class="" href="../gallery.html">Gallery</a>
                             </li>
                             <li>
-                                <a class="" href="contact.html">Contact Us</a>
+                                <a class="" href="../contact.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
