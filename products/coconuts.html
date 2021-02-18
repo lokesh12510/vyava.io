@@ -1,276 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Vyava-Coimbatore</title>
-		<meta name="description" content="Thumbnail Grid with Expanding Preview" />
-		<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" href="../css/navbar.css" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<script src="js/modernizr.custom.js"></script>
-	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	    <!-- //Web-Fonts -->
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-	    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
-	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-		<style type="text/css">
-			ul > li.list-order {
-				margin-bottom: 3rem!important;
 
-			}
-			h2 {
-				margin-top: 1rem!important;
-				z-index: 999;
-				position: relative;
-			}
-			.og-expanded {
-				transition: height 350ms ease 0s;
-				height: 960px;
-				margin-bottom: 60px;
-			}
-			.banner{
-			    width: 100%;
-			    height:400px;
-			}
-			.banner img{
-			    width: 100%;
-			    height:100%;
-			}
-			@media screen and (max-width: 500px){
-			    .banner{
-			        height: 300px;
-			    }
-			}
-			.main-banner-2 {
-				background: url('../images/banners/main_banner.jpg')!important;
-			}
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyava-Coimbatore</title>
+    <meta name="description" content="Thumbnail Grid with Expanding Preview" />
+    <meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="js/modernizr.custom.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- //Web-Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-			a.label-tag {
-				color: black;
-			}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <style type="text/css">
+        ul>li.list-order {
+            margin-bottom: 3rem!important;
+        }
+        
+        h2 {
+            margin-top: 1rem!important;
+            z-index: 999;
+            position: relative;
+        }
+        
+        .og-expanded {
+            transition: height 350ms ease 0s;
+            height: 960px;
+            margin-bottom: 60px;
+        }
+        
+        .banner {
+            width: 100%;
+            height: 400px;
+        }
+        
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .banner {
+                height: 300px;
+            }
+        }
+        
+        .main-banner-2 {
+            background: url('../images/banners/main_banner.jpg')!important;
+        }
+        
+        a.label-tag {
+            color: black;
+        }
+        
+        a.label-tag:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        a.enquire-tag:hover {
+            color: white!important
+        }
+    </style>
+</head>
 
-			a.label-tag:hover {
-				color: black;
-				text-decoration: underline;
-			}
-			a.enquire-tag:hover {
-				color: white!important
-			}
-		</style>
-	</head>
-	<body>
-	<!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
-                <div class="container"> <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                    <img src="../images/vyava_logo(2).png" style="height: auto; width:100px;">
-                </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/vyava_logo(2).png" style="height: auto; width:100px;">
+            </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
 
-                <div class="collapse navbar-collapse" id="navbar4">
-                    <ul class="container navbar-nav ml-auto pl-lg-4">
-                        <li class="nav-item px-lg-2 "> <a class="nav-link" href="../index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-address-card"></i></span>About</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-mortar-pestle"></i></span>spices</a> </li>
-                        <li class="nav-item px-lg-2 active"> <a class="nav-link" href="coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-leaf"></i></span>Coconuts</a> </li>
+            <div class="collapse navbar-collapse" id="navbar4">
+                <ul class="container navbar-nav ml-auto pl-lg-4">
+                    <li class="nav-item px-lg-2 ">
+                        <a class="nav-link" href="../index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a>
+                    </li>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="../about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-address-card"></i></span>About</a> </li>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-mortar-pestle"></i></span>spices</a> </li>
+                    <li class="nav-item px-lg-2 active"> <a class="nav-link" href="coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-leaf"></i></span>Coconuts</a> </li>
 
 
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-images"></i></span>Gallery</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-address-book"></i></span>Contact</a> </li>
-                    </ul>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="../gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-images"></i></span>Gallery</a> </li>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="../contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-address-book"></i></span>Contact</a> </li>
+                </ul>
 
 
             </div>
         </div>
     </nav>
-		<!-- Navbar Ends -->
-	    <div class="banner">
-					<img src="../images/banners/new_banner.jpg">
-					<div class="breadcrumb-w3ls py-1">
-			        <div class="container p-3">
-			            <ol class="breadcrumb m-0">
-			                <li class="breadcrumb-item">
-			                    <a href="index.html">Home</a>
-			                </li>
-			                <li class="breadcrumb-item active" aria-current="page">Spices</li>
-			            </ol>
-			        </div>
-			    </div>
-		</div>
-		<br>
+    <!-- Navbar Ends -->
+    <div class="banner">
+        <img src="../images/banners/new_banner.jpg">
+        <div class="breadcrumb-w3ls py-1">
+            <div class="container p-1">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Spices</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <br>
     <!-- Navbar Ends -->
 
-		<div class="container mt-4">
-			<!-- Codrops top bar -->
-			<!-- <div class="codrops-top clearfix">
+    <div class="container mt-4">
+        <!-- Codrops top bar -->
+        <!-- <div class="codrops-top clearfix">
 				<a href="http://tympanus.net/Tutorials/HexaFlip/"><strong>&laquo; Previous Demo: </strong>HexaFlip</a>
 				<span class="right">
 					<a href="http://cargocollective.com/jaimemartinez">Illustrations by Jaime Martinez</a>
 					<a href="http://tympanus.net/codrops/?p=14530"><strong>Back to the Codrops Article</strong></a>
 				</span>
 			</div> -->
-			<!--/ Codrops top bar -->
-			<br>
-			    <!-- page details -->
+        <!--/ Codrops top bar -->
+        <br>
+        <!-- page details -->
 
-		    <!-- //page details -->
-			<header class="clearfix" style="padding-bottom: 0px;">
-					<h1>Our Products<span>Coconuts</span></h1>
-			</header>
-			<div class="main">
-				<ul id="og-grid" class="og-grid">
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Semi Husked Coconut To Vyava" data-largesrc="images/coconuts/semi-husked-2.jpeg" data-title="Semi Husked" data-description="These are fully matured coconuts but while de-husking, the husk is left intact over the eyes of the coconut. This is a sensitive area, and by protecting it we can increase the shelf life of the coconut as the area susceptible to decay is protected.">
-							<img src="images/coconuts/semi-husked.jpg" alt="img01"/>
-							<h5>Semi husked</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Fully Husked Coconut To Vyava" data-largesrc="images/coconuts/fully-husked-1.jpg" data-title="Fully husked" data-description="These are also fully matured coconuts but the husk is removed completely. The shelf life of this variety is little less than the semi husked ones but since there is no husk, handling these coconuts can be done without a mess. These coconuts have to be stored in a cool and dry place. ">
-							<img src="images/coconuts/fully-husked-2.jpg" alt="img02"/>
-							<h5>Fully husked</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Coconut Oil To Vyava" data-largesrc="images/coconuts/coconut-oil-1.jpg" data-title="Coconut oil" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/coconuts/coconut-oil-2.jpg" alt="img03"/>
-							<h5>Coconut oil</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Virgin Coconut Oil To Vyava" data-largesrc="images/coconuts/virgin-coconut-oil-1.jpg" data-title="Virgin coconut oil" data-description="As virgin coconut oil is extracted from coconut milk, it has better aroma and taste as compared to the regular one. Also, virgin coconut oil has a luscious, tropical coconut scent and flavour. On the other hand, the normal one has artificial scent and flavour.	">
-							<img src="images/coconuts/virgin-coconut-oil-2.jpg" alt="img01"/>
-							<h5>Virgin coconut oil</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Dessicated coconut powder To Vyava" data-largesrc="images/coconuts/desiccated-coconut-powder-1.jpg" data-title="Dessicated coconut powder" data-description="Desiccated Coconut is a grated, dried (3% moisture content max.), and unsweetened fresh meat or kernel of a mature fruit of coconut. Dessicated Coconuts are graded by its cutting size and fine grade where fine grade is smaller particle size than the medium grade.">
-							<img src="images/coconuts/desiccated-coconut-powder-2.jpg" alt="img02"/>
-							<h5>Dessicated coconut powder</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Coconut sugar To Vyava" data-largesrc="images/coconuts/coconut-sugar-1.jpeg" data-title="Coconut sugar" data-description=" Coconut sugar is extracted from the sap of the coconut palm. It contains a few nutrients, including iron, zinc, calcium, and potassium, as well as antioxidants ( 25 ). It also has a lower glycemic index than sugar, which may be partly due to its inulin content.">
-							<img src="images/coconuts/coconut-sugar-2.jpg" alt="img03"/>
-							<h5>Coconut sugar</h5>
-						</a>
-					</li>
-					<li>
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Coconut shell To Vyava" data-largesrc="images/coconuts/coconut-shell-powder-1.jpg" data-title="Coconut shell/Shell powder" data-description="Coconut shell powder is made from coconut shells and is used as a filler in the manufacture of thermoset moulding powders like bakelite, synthetic resin glues or phenol formaldehyde.">
-							<img src="images/coconuts/coconut-shell-powder-2.jpg" alt="img01"/>
-							<h5>Coconut shell/Shell powder</h5>
-						</a>
-					</li>
-					<li>
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Activated Carbon To Vyava" data-largesrc="images/coconuts/activated-carbon-1.jpg" data-title="Activated Carbon" data-description="Coconut shell activated carbon is known for high hardness and low dust. Coconut shell activated carbon has a very high hardness and is more abrasion resistant than any other type. It is a totally natural, environmentally friendly product, since it is derived from coconut shells.">
-							<img src="images/coconuts/activated-carbon-2.jpg" alt="img01"/>
-							<h5>Activated Carbon</h5>
-						</a>
-					</li>
+        <!-- //page details -->
+        <header class="clearfix" style="padding-bottom: 0px;">
+            <h1>Our Products<span>Coconuts</span></h1>
+        </header>
+        <div class="main">
+            <ul id="og-grid" class="og-grid">
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Semi Husked Coconut To Vyava" data-largesrc="images/coconuts/semi-husked-2.jpeg" data-title="Semi Husked" data-description="These are fully matured coconuts but while de-husking, the husk is left intact over the eyes of the coconut. This is a sensitive area, and by protecting it we can increase the shelf life of the coconut as the area susceptible to decay is protected.">
+                        <img src="images/coconuts/semi-husked.jpg" alt="img01" />
+                        <h5>Semi husked</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Fully Husked Coconut To Vyava" data-largesrc="images/coconuts/fully-husked-1.jpg" data-title="Fully husked" data-description="These are also fully matured coconuts but the husk is removed completely. The shelf life of this variety is little less than the semi husked ones but since there is no husk, handling these coconuts can be done without a mess. These coconuts have to be stored in a cool and dry place. ">
+                        <img src="images/coconuts/fully-husked-2.jpg" alt="img02" />
+                        <h5>Fully husked</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Coconut Oil To Vyava" data-largesrc="images/coconuts/coconut-oil-1.jpg" data-title="Coconut oil" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                        <img src="images/coconuts/coconut-oil-2.jpg" alt="img03" />
+                        <h5>Coconut oil</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Virgin Coconut Oil To Vyava" data-largesrc="images/coconuts/virgin-coconut-oil-1.jpg" data-title="Virgin coconut oil" data-description="As virgin coconut oil is extracted from coconut milk, it has better aroma and taste as compared to the regular one. Also, virgin coconut oil has a luscious, tropical coconut scent and flavour. On the other hand, the normal one has artificial scent and flavour.	">
+                        <img src="images/coconuts/virgin-coconut-oil-2.jpg" alt="img01" />
+                        <h5>Virgin coconut oil</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Dessicated coconut powder To Vyava" data-largesrc="images/coconuts/desiccated-coconut-powder-1.jpg" data-title="Dessicated coconut powder" data-description="Desiccated Coconut is a grated, dried (3% moisture content max.), and unsweetened fresh meat or kernel of a mature fruit of coconut. Dessicated Coconuts are graded by its cutting size and fine grade where fine grade is smaller particle size than the medium grade.">
+                        <img src="images/coconuts/desiccated-coconut-powder-2.jpg" alt="img02" />
+                        <h5>Dessicated coconut powder</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Coconut sugar To Vyava" data-largesrc="images/coconuts/coconut-sugar-1.jpeg" data-title="Coconut sugar" data-description=" Coconut sugar is extracted from the sap of the coconut palm. It contains a few nutrients, including iron, zinc, calcium, and potassium, as well as antioxidants ( 25 ). It also has a lower glycemic index than sugar, which may be partly due to its inulin content.">
+                        <img src="images/coconuts/coconut-sugar-2.jpg" alt="img03" />
+                        <h5>Coconut sugar</h5>
+                    </a>
+                </li>
+                <li>
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Coconut shell To Vyava" data-largesrc="images/coconuts/coconut-shell-powder-1.jpg" data-title="Coconut shell/Shell powder" data-description="Coconut shell powder is made from coconut shells and is used as a filler in the manufacture of thermoset moulding powders like bakelite, synthetic resin glues or phenol formaldehyde.">
+                        <img src="images/coconuts/coconut-shell-powder-2.jpg" alt="img01" />
+                        <h5>Coconut shell/Shell powder</h5>
+                    </a>
+                </li>
+                <li>
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Activated Carbon To Vyava" data-largesrc="images/coconuts/activated-carbon-1.jpg" data-title="Activated Carbon" data-description="Coconut shell activated carbon is known for high hardness and low dust. Coconut shell activated carbon has a very high hardness and is more abrasion resistant than any other type. It is a totally natural, environmentally friendly product, since it is derived from coconut shells.">
+                        <img src="images/coconuts/activated-carbon-2.jpg" alt="img01" />
+                        <h5>Activated Carbon</h5>
+                    </a>
+                </li>
 
 
 
-				</ul>
+            </ul>
 
-			</div>
-		</div><!-- /container -->
-		        <footer>
-            <div class="container pt-xl-5 pt-lg-3">
-                <!-- newsletter -->
-                <div class="newsletter_right_w3w3pvt-lau pb-md-5 pb-3" style="padding-top: 18px" id="newsletter">
-                    <h2 class="tittle text-wh mb-5 font-weight-bold">Enquire Us</h2>
-                    <div class="n-right-w3ls pt-3">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-4 form-group">
-                                    <input class="form-control" type="text" name="Name" placeholder="Name" required="">
-                                </div>
-                                <div class="col-md-4 form-group px-md-0">
-                                    <input class="form-control" type="email" name="Email" placeholder="Email Address" required="">
-                                </div>
-                                <div class="col-md-4 form-group mt-md-0 mt-3">
-                                    <button class="form-control btn text-uppercase" type="submit">Submit Enquiry</button>
-                                </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <footer>
+        <div class="container pt-xl-5 pt-lg-3">
+            <!-- newsletter -->
+            <div class="newsletter_right_w3w3pvt-lau pb-md-5 pb-3" style="padding-top: 18px" id="newsletter">
+                <h2 class="tittle text-wh mb-5 font-weight-bold">Enquire Us</h2>
+                <div class="n-right-w3ls pt-3">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-4 form-group">
+                                <input class="form-control" type="text" name="Name" placeholder="Name" required="">
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-md-4 form-group px-md-0">
+                                <input class="form-control" type="email" name="Email" placeholder="Email Address" required="">
+                            </div>
+                            <div class="col-md-4 form-group mt-md-0 mt-3">
+                                <button class="form-control btn text-uppercase" type="submit">Submit Enquiry</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <!-- //newsletter -->
-                <!-- footer bottom -->
-                <div class="row pt-xl-5 pt-lg-3">
-                    <!-- button -->
-                    <div class="col-lg-5 col-md-7 w3l-footer mt-lg-3 text-md-left text-center">
-                        <ul class="list-unstyled footer-nav-wthree">
-                            <li class="mr-4">
-                                <a href="../index.html">Home</a>
-                            </li>
-                            <li class="mr-4">
-                                <a class="" href="../about.html">About Us</a>
-                            </li>
-                            <li class="mr-4">
-                                <a class="" href="../gallery.html">Gallery</a>
-                            </li>
-                            <li>
-                                <a class="" href="../contact.html">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //button -->
-                    <!-- social icons -->
-                    <div class="col-lg-7 col-md-5 w3social-icons text-md-right text-center mt-md-0 mt-3">
-                        <ul>
-                            <li>
-                                <a href="#" class="rounded-circle">
-                                    <i class="fa fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li class="px-2">
-                                <a href="#" class="rounded-circle">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="rounded-circle">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //social icons -->
-                </div>
-                <!-- //footer bottom -->
-                <!-- copyright -->
-                <div class="row pt-lg-4 pt-3 text-md-left text-center">
-                    <p class="col-xl-7 col-lg-8 copy-right-grids mt-lg-1">© 2020 Vyava Food. All Rights Reserved | Design by
-                        <a href="https://w3layouts.com/" target="_blank">NacFolg Technologies</a>
-                    </p>
-                    <div class="col-xl-5 col-lg-4 text-center mt-lg-0 mt-4">
-                        <a href="#home" class="move-top"></a>
-                    </div>
-                </div>
-                <!-- //copyright -->
             </div>
-        </footer>
-        <!-- //footer -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-		<script src="js/grid.js"></script>
-		<script src="../js/navbar.js"></script>
-		<script>
-			$(function() {
-				Grid.init();
-			});
-		</script>
-	</body>
+            <!-- //newsletter -->
+            <!-- footer bottom -->
+            <div class="row pt-xl-5 pt-lg-3">
+                <!-- button -->
+                <div class="col-lg-5 col-md-7 w3l-footer mt-lg-3 text-md-left text-center">
+                    <ul class="list-unstyled footer-nav-wthree">
+                        <li class="mr-4">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="mr-4">
+                            <a class="" href="../about.html">About Us</a>
+                        </li>
+                        <li class="mr-4">
+                            <a class="" href="../gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a class="" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //button -->
+                <!-- social icons -->
+                <div class="col-lg-7 col-md-5 w3social-icons text-md-right text-center mt-md-0 mt-3">
+                    <ul>
+                        <li>
+                            <a href="#" class="rounded-circle">
+                                <i class="fa fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="rounded-circle">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="rounded-circle">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //social icons -->
+            </div>
+            <!-- //footer bottom -->
+            <!-- copyright -->
+            <div class="row pt-lg-4 pt-3 text-md-left text-center">
+                <p class="col-xl-7 col-lg-8 copy-right-grids mt-lg-1">© 2020 Vyava Food. All Rights Reserved | Design by
+                    <a href="https://w3layouts.com/" target="_blank">NacFolg Technologies</a>
+                </p>
+                <div class="col-xl-5 col-lg-4 text-center mt-lg-0 mt-4">
+                    <a href="#" class="move-top"></a>
+                </div>
+            </div>
+            <!-- //copyright -->
+        </div>
+    </footer>
+    <!-- //footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/grid.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script>
+        $(function() {
+            Grid.init();
+        });
+    </script>
+</body>
+
 </html>

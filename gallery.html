@@ -36,15 +36,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="css/navbar.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!-- //Custom-Files -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
     <style>
         .new-inline {
             display: flex!important;
         }
-
+        
         .bg-lgreen {
             background-color: #81d742;
+        }
+        /* Element | http://127.0.0.1:5500/gallery.html */
+        
+        .navbar>div:nth-child(1) {
+            padding-bottom: 0px;
+        }
+        /* Element | http://127.0.0.1:5500/gallery.html */
+        
+        ul.container {
+            padding-bottom: 0px;
+        }
+        
+        .cont {
+            padding: 0px;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -61,44 +76,52 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <header>
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
-                <div class="container"> <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/vyava_logo(2).png" style="height: auto; width:100px;">
-                </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/vyava_logo(2).png" style="height: auto; width:100px;">
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
 
-                <div class="collapse navbar-collapse" id="navbar4">
-                    <ul class="container navbar-nav ml-auto pl-lg-4">
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-address-card"></i></span>About</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="products/spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-mortar-pestle"></i></span>spices</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="products/coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-leaf"></i></span>Coconuts</a> </li>
+                    <div class="collapse navbar-collapse" id="navbar4">
+                        <ul class="container navbar-nav ml-auto pl-lg-4">
+                            <li class="nav-item px-lg-2">
+                                <a class="nav-link" href="index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a>
+                            </li>
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-address-card"></i></span>About</a> </li>
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="products/spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-mortar-pestle"></i></span>spices</a> </li>
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="products/coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-leaf"></i></span>Coconuts</a> </li>
 
 
-                        <li class="nav-item px-lg-2 active"> <a class="nav-link" href="gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-images"></i></span>Gallery</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-address-book"></i></span>Contact</a> </li>
-                    </ul>
+                            <li class="nav-item px-lg-2 active"> <a class="nav-link" href="gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-images"></i></span>Gallery</a> </li>
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-address-book"></i></span>Contact</a> </li>
+                        </ul>
 
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar Ends -->
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar Ends -->
         </header>
         <!-- //header -->
     </div>
     <!-- //main -->
     <!-- page details -->
-    <div class="breadcrumb-w3ls py-1">
-        <div class="container">
-            <ol class="breadcrumb m-0">
-                <li class="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">Gallery</li>
-            </ol>
+    <div class="banner">
+
+        <div class="breadcrumb-w3ls py-1">
+            <div class="container p-1">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                </ol>
+            </div>
         </div>
     </div>
+    <br>
     <!-- //page details -->
 
     <!-- gallery -->
@@ -111,40 +134,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="">
                 <div class="gallery">
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                        <img class="gallery-image" src="images/gallery/farmer.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer1.jpg" alt="sunset behind San Francisco city skyline">
+                        <img class="gallery-image" src="images/gallery/farmer1.jpg" alt="sunset behind San Francisco city skyline">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer2.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+                        <img class="gallery-image" src="images/gallery/farmer2.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer3.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+                        <img class="gallery-image" src="images/gallery/farmer3.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer4.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+                        <img class="gallery-image" src="images/gallery/farmer4.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer5.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                        <img class="gallery-image" src="images/gallery/farmer5.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer6.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                        <img class="gallery-image" src="images/gallery/farmer6.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer7.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                        <img class="gallery-image" src="images/gallery/farmer7.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer8.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                        <img class="gallery-image" src="images/gallery/farmer8.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer9.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                        <img class="gallery-image" src="images/gallery/farmer9.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer10.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                        <img class="gallery-image" src="images/gallery/farmer10.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
                     </div>
                     <div class="gallery-item">
-                      <img class="gallery-image" src="images/gallery/farmer11.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                        <img class="gallery-image" src="images/gallery/farmer11.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
                     </div>
                 </div>
             </div>
@@ -295,8 +318,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </footer>
     <!-- //footer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-        <script src="js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>

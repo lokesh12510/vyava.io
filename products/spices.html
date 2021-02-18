@@ -1,297 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Vyava-Coimbatore</title>
-		<meta name="description" content="Thumbnail Grid with Expanding Preview" />
-		<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" href="../css/navbar.css" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<script src="js/modernizr.custom.js"></script>
-	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	    <!-- //Web-Fonts -->
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-	    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
-	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-		<style type="text/css">
-			ul > li.list-order {
-				margin-bottom: 3rem!important;
 
-			}
-			h2 {
-				margin-top: 1rem!important;
-				z-index: 999;
-				position: relative;
-			}
-			.og-expanded {
-				transition: height 350ms ease 0s;
-				height: 960px;
-				margin-bottom: 60px;
-			}
-			.banner{
-			    width: 100%;
-			    height:400px;
-			}
-			.banner img{
-			    width: 100%;
-			    height:100%;
-			}
-			@media screen and (max-width: 500px){
-			    .banner{
-			        height: 300px;
-			    }
-			}
-			.main-banner-2 {
-				background: url('../images/banners/main_banner.jpg')!important;
-			}
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyava-Coimbatore</title>
+    <meta name="description" content="Thumbnail Grid with Expanding Preview" />
+    <meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font-Awesome-Icons-CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-			a.label-tag {
-				color: black;
-			}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="js/modernizr.custom.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- //Web-Fonts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <style type="text/css">
+        ul>li.list-order {
+            margin-bottom: 3rem!important;
+        }
+        
+        h2 {
+            margin-top: 1rem!important;
+            z-index: 999;
+            position: relative;
+        }
+        
+        .og-expanded {
+            transition: height 350ms ease 0s;
+            height: 960px;
+            margin-bottom: 60px;
+        }
+        
+        .banner {
+            width: 100%;
+            height: 400px;
+        }
+        
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .banner {
+                height: 300px;
+            }
+        }
+        
+        .main-banner-2 {
+            background: url('../images/banners/main_banner.jpg')!important;
+        }
+        
+        a.label-tag {
+            color: black;
+        }
+        
+        a.label-tag:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        a.enquire-tag:hover {
+            color: white!important
+        }
+    </style>
+</head>
 
-			a.label-tag:hover {
-				color: black;
-				text-decoration: underline;
-			}
-			a.enquire-tag:hover {
-				color: white!important
-			}
-		</style>
-	</head>
-	<body>
-	<!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
-                <div class="container"> <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                    <img src="../images/vyava_logo(2).png" style="height: auto; width:100px;">
-                </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/vyava_logo(2).png" style="height: auto; width:100px;">
+            </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
 
-                <div class="collapse navbar-collapse" id="navbar4">
-                    <ul class="container navbar-nav ml-auto pl-lg-4">
-                        <li class="nav-item px-lg-2 "> <a class="nav-link" href="../index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-address-card"></i></span>About</a> </li>
-                        <li class="nav-item px-lg-2 active"> <a class="nav-link" href="spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-mortar-pestle"></i></span>spices</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-leaf"></i></span>Coconuts</a> </li>
+            <div class="collapse navbar-collapse" id="navbar4">
+                <ul class="container navbar-nav ml-auto pl-lg-4">
+                    <li class="nav-item px-lg-2 ">
+                        <a class="nav-link" href="../index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a>
+                    </li>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="../about.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-address-card"></i></span>About</a> </li>
+                    <li class="nav-item px-lg-2 active"> <a class="nav-link" href="spices.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-mortar-pestle"></i></span>spices</a> </li>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="coconuts.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-leaf"></i></span>Coconuts</a> </li>
 
 
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-images"></i></span>Gallery</a> </li>
-                        <li class="nav-item px-lg-2"> <a class="nav-link" href="../contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-address-book"></i></span>Contact</a> </li>
-                    </ul>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="../gallery.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-images"></i></span>Gallery</a> </li>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="../contact.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-address-book"></i></span>Contact</a> </li>
+                </ul>
 
             </div>
         </div>
     </nav>
-		<!-- Navbar Ends -->
-	    <div class="banner">
-					<img src="../images/banners/new_banner.jpg">
-					<div class="breadcrumb-w3ls py-1">
-			        <div class="container p-3">
-			            <ol class="breadcrumb m-0">
-			                <li class="breadcrumb-item">
-			                    <a href="index.html">Home</a>
-			                </li>
-			                <li class="breadcrumb-item active" aria-current="page">Spices</li>
-			            </ol>
-			        </div>
-			    </div>
-		</div>
-		<br>
+    <!-- Navbar Ends -->
+    <div class="banner">
+        <img src="../images/banners/new_banner.jpg">
+        <div class="breadcrumb-w3ls py-1">
+            <div class="container p-1">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Spices</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <br>
     <!-- Navbar Ends -->
 
-		<div class="container mt-4">
-			<!-- Codrops top bar -->
-			<!-- <div class="codrops-top clearfix">
+    <div class="container mt-4">
+        <!-- Codrops top bar -->
+        <!-- <div class="codrops-top clearfix">
 				<a href="http://tympanus.net/Tutorials/HexaFlip/"><strong>&laquo; Previous Demo: </strong>HexaFlip</a>
 				<span class="right">
 					<a href="http://cargocollective.com/jaimemartinez">Illustrations by Jaime Martinez</a>
 					<a href="http://tympanus.net/codrops/?p=14530"><strong>Back to the Codrops Article</strong></a>
 				</span>
 			</div> -->
-			<!--/ Codrops top bar -->
-			<br>
-			    <!-- page details -->
+        <!--/ Codrops top bar -->
+        <br>
+        <!-- page details -->
 
-		    <!-- //page details -->
-			<header class="clearfix" style="padding-bottom: 0px;">
-					<h1>Our Products<span>Spices</span></h1>
-			</header>
-			<div class="main">
-				<ul id="og-grid" class="og-grid">
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Red Chilli To Vyava" data-largesrc="images/spices/Original/redchilli.jpg" data-title="Red Chilli" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/spices/Thumbs/redchilli.jpg" alt="img01"/>
-							<h5>Red Chilli</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Black Pepper To Vyava" data-largesrc="images/spices/Original/black_pepper.jpg" data-title="Black Pepper" data-description="We hand picked BLACK PEPPER grown in parts of India. Our experts travel across India to find the highest grade of Black Pepper to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. ">
-							<img src="images/spices/Thumbs/black_pepper.jpg" alt="img02"/>
-							<h5>Black Pepper</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Turmeric To Vyava" data-largesrc="images/spices/Original/turmeric.jpg" data-title="Turmeric" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/spices/Thumbs/turmeric.jpg" alt="img03"/>
-							<h5>Turmeric</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Chilli To Vyava" data-largesrc="images/spices/Original/chilli.jpg" data-title="Chilli" data-description=". Our experts travel across India to find the highest grade of Chilli to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. ">
-							<img src="images/spices/Thumbs/chilli.jpg" alt="img01"/>
-							<h5>Chilli</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cloves To Vyava" data-largesrc="images/spices/Original/cloves.jpg" data-title="Cloves" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/spices/Thumbs/cloves.jpg" alt="img02"/>
-							<h5>Cloves</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cinnamon To Vyava" data-largesrc="images/spices/Original/cinnamon.jpg" data-title="Cinnamon" data-description=" Vyava, Processes and Packages hand picked CINNAMON grown in parts of India and Sri Lanka. Our experts travel across India and Sri Lanka to find the highest grade of Cinnamon to be Crushed, Grounded, and Blended. We believe in providing superior quality which are processed and packaged under maximum hygienic conditions. ">
-							<img src="images/spices/Thumbs/cinnamon.jpg" alt="img03"/>
-							<h5>Cinnamon</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cumin To Vyava" data-largesrc="images/spices/Original/cumin.jpg" data-title="Cumin" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/spices/Thumbs/cumin.jpg" alt="img01"/>
-							<h5>Cumin</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Fennel To Vyava" data-largesrc="images/spices/Original/fennel.jpg" data-title="Fennel" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/spices/Thumbs/fennel.jpg" alt="img02"/>
-							<h5>Fennel</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Coriander To Vyava" data-largesrc="images/spices/Original/coriander.jpg" data-title="Coriander" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/spices/Thumbs/coriander.jpg" alt="img03"/>
-							<h5>Coriander</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Garlic To Vyava" data-largesrc="images/spices/Original/garlic.jpg" data-title="Garlic" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/spices/Thumbs/garlic.jpg" alt="img01"/>
-							<h5>Garlic</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Curry Leaves To Vyava" data-largesrc="images/spices/Original/curry_leaves.jpg" data-title="Curry Leaves" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/spices/Thumbs/curry_leaves.jpg" alt="img02"/>
-							<h5>Curry Leaves</h5>
-						</a>
-					</li>
-					<li class="list-order">
-						<a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Ginger To Vyava" data-largesrc="images/spices/Original/ginger.jpg" data-title="Ginger" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/spices/Thumbs/ginger.jpg" alt="img03"/>
-							<h5>Ginger</h5>
-						</a>
-					</li>
+        <!-- //page details -->
+        <header class="clearfix" style="padding-bottom: 0px;">
+            <h1>Our Products<span>Spices</span></h1>
+        </header>
+        <div class="main">
+            <ul id="og-grid" class="og-grid">
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Red Chilli To Vyava" data-largesrc="images/spices/Original/redchilli.jpg" data-title="Red Chilli" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                        <img src="images/spices/Thumbs/redchilli.jpg" alt="img01" />
+                        <h5>Red Chilli</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Black Pepper To Vyava" data-largesrc="images/spices/Original/black_pepper.jpg" data-title="Black Pepper" data-description="We hand picked BLACK PEPPER grown in parts of India. Our experts travel across India to find the highest grade of Black Pepper to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. ">
+                        <img src="images/spices/Thumbs/black_pepper.jpg" alt="img02" />
+                        <h5>Black Pepper</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Turmeric To Vyava" data-largesrc="images/spices/Original/turmeric.jpg" data-title="Turmeric" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                        <img src="images/spices/Thumbs/turmeric.jpg" alt="img03" />
+                        <h5>Turmeric</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Chilli To Vyava" data-largesrc="images/spices/Original/chilli.jpg" data-title="Chilli" data-description=". Our experts travel across India to find the highest grade of Chilli to be Crushed, Grounded, and Blended. We believe in providing superior quality products which are processed and packaged under maximum hygienic conditions. ">
+                        <img src="images/spices/Thumbs/chilli.jpg" alt="img01" />
+                        <h5>Chilli</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cloves To Vyava" data-largesrc="images/spices/Original/cloves.jpg" data-title="Cloves" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                        <img src="images/spices/Thumbs/cloves.jpg" alt="img02" />
+                        <h5>Cloves</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cinnamon To Vyava" data-largesrc="images/spices/Original/cinnamon.jpg" data-title="Cinnamon" data-description=" Vyava, Processes and Packages hand picked CINNAMON grown in parts of India and Sri Lanka. Our experts travel across India and Sri Lanka to find the highest grade of Cinnamon to be Crushed, Grounded, and Blended. We believe in providing superior quality which are processed and packaged under maximum hygienic conditions. ">
+                        <img src="images/spices/Thumbs/cinnamon.jpg" alt="img03" />
+                        <h5>Cinnamon</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Cumin To Vyava" data-largesrc="images/spices/Original/cumin.jpg" data-title="Cumin" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                        <img src="images/spices/Thumbs/cumin.jpg" alt="img01" />
+                        <h5>Cumin</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Fennel To Vyava" data-largesrc="images/spices/Original/fennel.jpg" data-title="Fennel" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                        <img src="images/spices/Thumbs/fennel.jpg" alt="img02" />
+                        <h5>Fennel</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Coriander To Vyava" data-largesrc="images/spices/Original/coriander.jpg" data-title="Coriander" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                        <img src="images/spices/Thumbs/coriander.jpg" alt="img03" />
+                        <h5>Coriander</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Garlic To Vyava" data-largesrc="images/spices/Original/garlic.jpg" data-title="Garlic" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                        <img src="images/spices/Thumbs/garlic.jpg" alt="img01" />
+                        <h5>Garlic</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Curry Leaves To Vyava" data-largesrc="images/spices/Original/curry_leaves.jpg" data-title="Curry Leaves" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                        <img src="images/spices/Thumbs/curry_leaves.jpg" alt="img02" />
+                        <h5>Curry Leaves</h5>
+                    </a>
+                </li>
+                <li class="list-order">
+                    <a class="label-tag" href="https://api.whatsapp.com/send?phone=+91 8838407495&text=Enquiry Ginger To Vyava" data-largesrc="images/spices/Original/ginger.jpg" data-title="Ginger" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                        <img src="images/spices/Thumbs/ginger.jpg" alt="img03" />
+                        <h5>Ginger</h5>
+                    </a>
+                </li>
 
-				</ul>
+            </ul>
 
-			</div>
-		</div><!-- /container -->
-		        <footer>
-            <div class="container pt-xl-5 pt-lg-3">
-                <!-- newsletter -->
-                <div class="newsletter_right_w3w3pvt-lau pb-md-5 pb-3 " id="newsletter" style="padding-top: 18px">
-                    <h2 class="tittle text-wh mb-5 font-weight-bold" >Enquire Us</h2>
-                    <div class="n-right-w3ls pt-3">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-4 form-group">
-                                    <input class="form-control" type="text" name="Name" placeholder="Name" required="">
-                                </div>
-                                <div class="col-md-4 form-group px-md-0">
-                                    <input class="form-control" type="email" name="Email" placeholder="Email Address" required="">
-                                </div>
-                                <div class="col-md-4 form-group mt-md-0 mt-3">
-                                    <button class="form-control btn text-uppercase" type="submit">Submit Enquiry</button>
-                                </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <footer>
+        <div class="container pt-xl-5 pt-lg-3">
+            <!-- newsletter -->
+            <div class="newsletter_right_w3w3pvt-lau pb-md-5 pb-3 " id="newsletter" style="padding-top: 18px">
+                <h2 class="tittle text-wh mb-5 font-weight-bold">Enquire Us</h2>
+                <div class="n-right-w3ls pt-3">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-4 form-group">
+                                <input class="form-control" type="text" name="Name" placeholder="Name" required="">
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-md-4 form-group px-md-0">
+                                <input class="form-control" type="email" name="Email" placeholder="Email Address" required="">
+                            </div>
+                            <div class="col-md-4 form-group mt-md-0 mt-3">
+                                <button class="form-control btn text-uppercase" type="submit">Submit Enquiry</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <!-- //newsletter -->
-                <!-- footer bottom -->
-                <div class="row pt-xl-5 pt-lg-3">
-                    <!-- button -->
-                    <div class="col-lg-5 col-md-7 w3l-footer mt-lg-3 text-md-left text-center">
-                        <ul class="list-unstyled footer-nav-wthree">
-                            <li class="mr-4">
-                                <a href="../index.html">Home</a>
-                            </li>
-                            <li class="mr-4">
-                                <a class="" href="../about.html">About Us</a>
-                            </li>
-                            <li class="mr-4">
-                                <a class="" href="../gallery.html">Gallery</a>
-                            </li>
-                            <li>
-                                <a class="" href="../contact.html">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //button -->
-                    <!-- social icons -->
-                    <div class="col-lg-7 col-md-5 w3social-icons text-md-right text-center mt-md-0 mt-3">
-                        <ul>
-                            <li>
-                                <a href="#" class="rounded-circle">
-                                    <i class="fa fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li class="px-2">
-                                <a href="#" class="rounded-circle">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="rounded-circle">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //social icons -->
-                </div>
-                <!-- //footer bottom -->
-                <!-- copyright -->
-                <div class="row pt-lg-4 pt-3 text-md-left text-center">
-                    <p class="col-xl-7 col-lg-8 copy-right-grids mt-lg-1">© 2020 Vyava Food. All Rights Reserved | Design by
-                        <a href="https://w3layouts.com/" target="_blank">NacFolg Technologies</a>
-                    </p>
-                    <div class="col-xl-5 col-lg-4 text-center mt-lg-0 mt-4">
-                        <a href="#home" class="move-top"></a>
-                    </div>
-                </div>
-                <!-- //copyright -->
             </div>
-        </footer>
-        <!-- //footer -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-		<script src="js/grid.js"></script>
-		<script src="../js/navbar.js"></script>
-		<script>
-			$(function() {
-				Grid.init();
-			});
-		</script>
-	</body>
+            <!-- //newsletter -->
+            <!-- footer bottom -->
+            <div class="row pt-xl-5 pt-lg-3">
+                <!-- button -->
+                <div class="col-lg-5 col-md-7 w3l-footer mt-lg-3 text-md-left text-center">
+                    <ul class="list-unstyled footer-nav-wthree">
+                        <li class="mr-4">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="mr-4">
+                            <a class="" href="../about.html">About Us</a>
+                        </li>
+                        <li class="mr-4">
+                            <a class="" href="../gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a class="" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //button -->
+                <!-- social icons -->
+                <div class="col-lg-7 col-md-5 w3social-icons text-md-right text-center mt-md-0 mt-3">
+                    <ul>
+                        <li>
+                            <a href="#" class="rounded-circle">
+                                <i class="fa fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="rounded-circle">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="rounded-circle">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //social icons -->
+            </div>
+            <!-- //footer bottom -->
+            <!-- copyright -->
+            <div class="row pt-lg-4 pt-3 text-md-left text-center">
+                <p class="col-xl-7 col-lg-8 copy-right-grids mt-lg-1">© 2020 Vyava Food. All Rights Reserved | Design by
+                    <a href="https://w3layouts.com/" target="_blank">NacFolg Technologies</a>
+                </p>
+                <div class="col-xl-5 col-lg-4 text-center mt-lg-0 mt-4">
+                    <a href="#" class="move-top"></a>
+                </div>
+            </div>
+            <!-- //copyright -->
+        </div>
+    </footer>
+    <!-- //footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/grid.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script>
+        $(function() {
+            Grid.init();
+        });
+    </script>
+</body>
+
 </html>
